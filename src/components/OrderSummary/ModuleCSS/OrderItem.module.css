@@ -1,0 +1,41 @@
+.orderItemContainer{
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.orderItem{
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    align-items: center;
+    
+}
+.orderItem h4{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    max-width: 125px;
+}
+.orderItem img{
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.left{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.left div p{
+    font-family: 'Poppins', sans-serif;
+}
+.line{
+    height: 1px;
+    width: 80%;
+    background-color: #ccc;
+}

@@ -1,0 +1,173 @@
+.detailsModal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8); /* Darker overlay */
+  z-index: 1000;
+  color: #fff;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.modalContent {
+  background-color: #f2f2f2;
+  color: #333333;
+  border-radius: 8px;
+  width: 60%;
+  height: 80%;
+  transform: translateY(-100px);
+  animation: slideDown 0.5s forwards;
+}
+@keyframes slideDown {
+  to {
+    transform: translateY(0);
+  }
+}
+.container{
+  display: flex;
+  justify-content: space-evenly;
+ 
+  padding-top: 5rem;
+  
+}
+.product-image{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+ 
+}
+.product-image img{
+    height: 12rem;
+    width: 12rem;
+    background-color: red;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.thumbnail-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.thumbnail-div img {
+  height: 50px;
+  width: 50px;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  
+  
+}
+.btn-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding-top: 2rem;
+}
+.addToCart {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  align-items: center;
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #4481eb;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+.buyNow{
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  align-items: center;
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(241, 59, 59);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+.buyNow:hover {
+  background-color: rgb(233, 39, 39);
+}
+
+.addToCart:hover {
+  background-color: #3a79d1;
+}
+.closeButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 50px;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  background-color: #4481eb;
+  transition: transform 0.3s ease;
+}
+
+.closeButton:hover {
+  transform: rotate(10deg);
+}
+
+.product-quantity {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+}
+
+.product-quantity button {
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #3a79d1;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 2px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.product-quantity button:hover {
+  background-color: #2e5ea8;
+}
+.product-details p{
+  padding: 2px;
+}

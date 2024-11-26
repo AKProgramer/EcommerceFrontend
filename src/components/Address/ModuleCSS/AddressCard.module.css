@@ -1,0 +1,120 @@
+.detailsModal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8); /* Darker overlay */
+    z-index: 1000;
+    color: #fff;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .modalContent {
+    background-color: #f2f2f2;
+    color: #333333;
+    border-radius: 8px;
+    width: 60%;
+    height: 85%;
+    position: relative;
+    transform: translateY(-50px);
+    animation: slideDown 0.5s forwards;
+    overflow-y: auto;
+  }
+  
+  @keyframes slideDown {
+    to {
+      transform: translateY(0);
+    }
+  }
+  .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.1);
+  }
+  .head h2{
+    color: #4481eb;
+  }
+  .closeButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 50px;
+    border-radius: 5px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    background-color: #4481eb;
+    transition: transform 0.3s ease;
+  }
+  
+  .closeButton:hover {
+    transform: rotate(10deg);
+  }
+  .addressDetailCards{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(350px, 1fr)); /* Ensure minimum width to fit two columns */
+    gap: 20px;
+  }
+  .buttons{
+    margin-top: 5rem;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+  }
+  .buttons button{
+    width: 150px;
+    height: 40px;
+  }
+  .buttons p{
+    color: red;
+    font-size: 12px;
+  }
+  .confirmButton{
+    background-color: #4481eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+  }
+  .addAddressButton{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 12px;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #4481eb;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.1);
+    padding: auto;
+  }
+  .addressCard.selected {
+    border: 1px solid #4481eb;
+  }
+  
+ 
+
+ 

@@ -1,0 +1,25 @@
+:root {
+  --blink-color: white; 
+}
+@keyframes typing {
+  from { 
+    width: 0; 
+  }
+  to { 
+    width: 100%; 
+  }
+}
+
+.typingEffect {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid;
+  width: 0; /* Initially hide the text */
+  animation: typing 3s steps(40, end) 2s forwards, blink-caret 1s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--blink-color); }
+}

@@ -1,0 +1,11 @@
+.kfc-box{
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+  }
+  .kfc-box span{
+    height: 22px;
+    width: 15px;
+    background-color: #4481eb;
+    border-radius: 1px; 
+  }

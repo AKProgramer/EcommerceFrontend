@@ -1,0 +1,63 @@
+.paymentHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.easypaisa, .jazzcash,.cashOnDelivery{
+    width: 100%;
+    padding: 1rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.1);
+}
+.easypaisa p, .cashOnDelivery p{
+    padding-left: 20px;
+    font-size: 14px;
+    color: #333;
+}
+.jazzcash p{
+    padding-left: 20px;
+    font-size: 14px;
+    color: #333;
+}
+.buttons{
+    display: flex;
+    gap: 20px;
+}
+.easypaisa .label, .jazzcash .label{
+    font-size: 13px;
+    color: #757575;
+    margin-top: 1rem;
+}
+.accountNo{
+    width: 300px;
+    height: 35px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.accountNo:focus{
+    outline-color: #4481eb;
+}
+.payNowBtn{
+    margin: 10px;
+    margin-top: 30px;
+    width: 30%;
+    height: 3rem;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    background-color: #4481eb;
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.jazzcash .text{
+    padding-left: 40px;
+}
+.error{
+    color: red !important;
+    font-size: 12px !important;
+}
